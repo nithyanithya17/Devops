@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayoutDaily"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nitha"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewDailyWaterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Water Consumption"
+        android:textSize="28sp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Date Label -->
+    <TextView
+        android:id="@+id/textViewDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        app:layout_constraintTop_toBottomOf="@id/textViewDailyWaterTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Date Input -->
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter date (e.g., 2025-04-06)"
+        android:inputType="date"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintTop_toBottomOf="@id/textViewDateLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Amount Label -->
+    <TextView
+        android:id="@+id/textViewAmountLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount (Litres)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        app:layout_constraintTop_toBottomOf="@id/editTextDate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Amount Input -->
+    <EditText
+        android:id="@+id/editTextWaterAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount (e.g., 2.5)"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintTop_toBottomOf="@id/textViewAmountLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSaveWaterData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1976D2"
+        app:layout_constraintTop_toBottomOf="@id/editTextWaterAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Home Button -->
+    <Button
+        android:id="@+id/buttonBackToHomeFromDaily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dashboard"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#388E3C"
+        app:layout_constraintTop_toBottomOf="@id/buttonSaveWaterData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+    <!-- Placeholder Text Above Image -->
+    <TextView
+        android:id="@+id/textViewPlaceholderAboveImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Water. Save Life."
+        android:textSize="28sp"
+        android:textColor="#0D47A1"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/imageViewBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Bottom Image -->
+    <ImageView
+        android:id="@+id/imageViewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/resource_new"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

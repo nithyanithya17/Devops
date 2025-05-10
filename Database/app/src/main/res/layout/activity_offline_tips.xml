@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewOfflineTips"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nitha"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offline Water Saving Tips"
+            android:textColor="#0D47A1"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Tip 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Turn off taps tightly after use."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold" />
+
+        <!-- Tip 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Use a bucket instead of a hose for washing vehicles."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold" />
+
+        <!-- Tip 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Collect rainwater for gardening and cleaning."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <!-- Tip 4 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Fix leaking pipes and faucets immediately."
+            android:textSize="20sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold" />
+
+        <!-- Tip 5 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Reuse kitchen water for watering plants."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/buttonBackToMainOffline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/offline"
+            android:scaleType="fitXY"
+            android:contentDescription="Sava"/>
+    </LinearLayout>
+</ScrollView>

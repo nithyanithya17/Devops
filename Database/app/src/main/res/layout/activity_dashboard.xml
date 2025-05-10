@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/nitha">
+
+    <!-- Title: SDG 6 - Clean Water & Sanitation -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SDG 6: Clean Water and Sanitation"
+        android:textSize="34sp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        android:gravity="center" />
+
+    <!-- Info about SDG 6 -->
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Access to clean water is essential for healthy living and the preservation of ecosystems. SDG 6 seeks to ensure that everyone has access to safe and affordable drinking water."
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Button to view tips for sustainable water use -->
+    <Button
+        android:id="@+id/btnTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded_button"
+        android:text="Reports"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <!-- Button to view the SDG 6 donation page -->
+    <Button
+        android:id="@+id/btnDonate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded_button"
+        android:text="Donate for Clean Water"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Button to learn more about SDG 6 -->
+    <Button
+        android:id="@+id/btnLearnMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded_button"
+        android:text="Learn More"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Button to go back to the main dashboard or home -->
+    <Button
+        android:id="@+id/btnBackToHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="DailywaterConsumption"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
